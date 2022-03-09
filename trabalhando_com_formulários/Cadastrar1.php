@@ -13,7 +13,7 @@
         <input type = "text" size="30" name="nome"/><br/>
 
         Email: <br/>
-        <input type = "text" size="30" name="email"/><br/>
+        <input type = "text" size="30" name="email"/><br/><br/>
 
         <input type = "submit" value = "cadastrar"/><br/>
 
