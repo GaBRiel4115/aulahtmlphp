@@ -1,0 +1,10 @@
+body {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+.container {
+    padding: auto 2rem;
+    max-width: 500px;
+}
