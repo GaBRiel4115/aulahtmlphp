@@ -6,7 +6,7 @@
         die();
     }
 
-    $sql = "INSERT INTO usuario (nome,email,telefone)" . "VALUES ('{$_POST["nome"]}','{$_POST["email"]}','{$_POST["telefone"]}' )";
+    $sql = "INSERT INTO usuario (nome,email,telefone,endereco)" . "VALUES ('{$_POST["nome"]}','{$_POST["email"]}','{$_POST["telefone"]}','{$_POST["endereco"]}' )";
 
     $conexao->query($sql);
     $conexao->close();
