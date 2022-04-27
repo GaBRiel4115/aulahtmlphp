@@ -30,7 +30,7 @@
         <div class="col">
           <nav class="navbar navbar-dark bg-dark">
             <div class="container-fluid">
-              <form class="d-flex">
+              <form class="d-flex" action="pesquisa1.php" method="POST">
                 <input
                   class="form-control me-2" type="search" placeholder="Search" aria-label="Search" name="busca" autofocus>
                 <button class="btn btn-outline-success" type="submit">
@@ -61,8 +61,8 @@
                             <td>$endereco</td>
                             <td>$telefone</td>
                             <td>$email</td>
-                        </tr>";
-                }
+                          </tr>";
+                  }
                 ?>
 
           </table>
