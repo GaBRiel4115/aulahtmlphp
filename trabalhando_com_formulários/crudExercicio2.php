@@ -6,10 +6,12 @@
         die();
     }
 
-    $sql = "INSERT INTO usuario (nome,email,telefone,endereco)" . "VALUES ('{$_POST["nome"]}','{$_POST["email"]}','{$_POST["telefone"]}','{$_POST["endereco"]}' )";
+    $sql = "INSERT INTO usuarios (nome, email, telefone, endereco)" . "VALUES('{$_POST["nome"]}', '{$_POST["email"]}', '{$_POST["telefone"]}', '{$_POST["endereco"]}' )";
 
     $conexao->query($sql);
     $conexao->close();
 
-    header("refresh:1;url=crudExercicio.php");
+    echo "Cadastrado ocm sucesso";
+
+    header("refresh:1;url=pesquisa.php");
     ?>
