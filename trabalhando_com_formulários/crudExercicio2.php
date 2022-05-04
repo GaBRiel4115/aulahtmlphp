@@ -13,5 +13,5 @@
 
     echo "Cadastrado ocm sucesso";
 
-    header("refresh:1;url=pesquisa.php");
+    header("refresh:1;url=pesquisa1.php");
     ?>
