@@ -33,15 +33,13 @@
 
         $dados = mysqli_query($conexao, $sql);
         $linha = mysqli_fetch_assoc($dados);
-
-
     ?>
 
 
 
         <div class="container">
 
-            <form  method = "POST" action="crudExercicio2.php">
+            <form  method = "POST" action="Edit_script.php">
                 
                 <div class="row mb-3">
                     <label for="inputEmail3" class="col-sm-2 col-form-label">Nome</label>
@@ -68,8 +66,10 @@
                     </div>
                 </div>
                 </div>
-                <button type="submit" class="btn btn-primary">Sign in</button>
-            
+                <div class="form-grupo">
+                    <button type="submit" class="btn btn-primary">Salvar alterações</button>
+                    <input type= "hidden" name="id" value="<?php echo $linha['id']?>">
+                </div>
             </form>
         </div>
 
